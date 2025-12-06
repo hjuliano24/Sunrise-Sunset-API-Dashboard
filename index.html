@@ -14,10 +14,10 @@
     <main>
         <section>
             <h2>Select location to see sunrise and sunset times</h2>
-            <select name="locations" id="location-selector">
+            <select name="locations" id="locationSelector">
                 <option value="">--Select a location--</option>
-                <option value="newyork">New York</option>
-                <option value="losangeles">Los Angeles</option>
+                <option value="newYork">New York</option>
+                <option value="losAngeles">Los Angeles</option>
                 <option value="chicago">Chicago</option>
                 <option value="houston">Houston</option>
                 <option value="miami">Miami</option>
@@ -27,18 +27,19 @@
                 <option value="sanfrancisco">San Francisco</option>
                 <option value="atlanta">Atlanta</option>
             </select>
+            <p id="errorMessage"></p>
             <table>
                 <tr><th></th><th>Today</th><th>Tomorrow</th></tr>
-                <tr><td>Sunrise</td><td id="sunrise-today">--:--</td><td id="sunrise-tomorrow">--:--</td></tr>
-                <tr><td>Sunset</td><td id="sunset-today">--:--</td><td id="sunset-tomorrow">--:--</td></tr>
-                <tr><td>Dawn</td><td id="dawn-today">--:--</td><td id="dawn-tomorrow">--:--</td></tr>
-                <tr><td>Dusk</td><td id="dusk-today">--:--</td><td id="dusk-tomorrow">--:--</td></tr>
-                <tr><td>Solar Noon</td><td id="solarnoon-today">--:--</td><td id="solarnoon-tomorrow">--:--</td></tr>
+                <tr><td>Sunrise</td><td id="sunriseToday">--:--</td><td id="sunriseTomorrow">--:--</td></tr>
+                <tr><td>Sunset</td><td id="sunsetToday">--:--</td><td id="sunsetTomorrow">--:--</td></tr>
+                <tr><td>Dawn</td><td id="dawnToday">--:--</td><td id="dawnTomorrow">--:--</td></tr>
+                <tr><td>Dusk</td><td id="duskToday">--:--</td><td id="duskTomorrow">--:--</td></tr>
+                <tr><td>Solar Noon</td><td id="solarNoonToday">--:--</td><td id="solarNoonTomorrow">--:--</td></tr>
             </table>
         </section>
     </main>
     <footer>
-        <p></p>
+        <p>Powered by <a href="https://sunrisesunset.io/" target="_blank">Sunrise Sunset API</a></p>
     </footer>
     <script src="script.js"></script>
 </body>
