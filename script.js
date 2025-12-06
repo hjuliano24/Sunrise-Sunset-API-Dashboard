@@ -18,7 +18,7 @@ locationSelect.addEventListener('change', (event) => {
             document.querySelector('#solarNoonToday').innerHTML = data.results.solar_noon;
         })
         .catch(error => {
-            console.error('Error fetching data:', error);
+            document.querySelector('#errorMessage').innerHTML = error;
         });
         //Grabs data from the API for New York City tomorrow
         fetch("https://api.sunrisesunset.io/json?lat=40.712776&lng=-74.005974&date=tomorrow")
@@ -31,7 +31,7 @@ locationSelect.addEventListener('change', (event) => {
             document.querySelector('#solarNoonTomorrow').innerHTML = data.results.solar_noon;
         })
         .catch(error => {
-            console.error('Error fetching data:', error);
+            document.querySelector('#errorMessage').innerHTML = error;
         });
 
     } else if (selectedLocation === 'losAngeles') {
@@ -46,7 +46,7 @@ locationSelect.addEventListener('change', (event) => {
             document.querySelector('#solarNoonToday').innerHTML = data.results.solar_noon;
         })
         .catch(error => {
-            console.error('Error fetching data:', error);
+            document.querySelector('#errorMessage').innerHTML = error;
         });
         //Grabs data from the API for Los Angeles tomorrow
         fetch("https://api.sunrisesunset.io/json?lat=34.052235&lng=-118.243683&date=tomorrow")
@@ -59,7 +59,7 @@ locationSelect.addEventListener('change', (event) => {
             document.querySelector('#solarNoonTomorrow').innerHTML = data.results.solar_noon;
         })
         .catch(error => {
-            console.error('Error fetching data:', error);
+            document.querySelector('#errorMessage').innerHTML = error;
         });
 
     } else if (selectedLocation === 'chicago') {
@@ -74,7 +74,7 @@ locationSelect.addEventListener('change', (event) => {
             document.querySelector('#solarNoonToday').innerHTML = data.results.solar_noon;
         })
         .catch(error => {
-            console.error('Error fetching data:', error);
+            document.querySelector('#errorMessage').innerHTML = error;
         });
         //Grabs data from the API for Chicago tomorrow
         fetch("https://api.sunrisesunset.io/json?lat=41.881832&lng=-87.623177&date=tomorrow")
@@ -87,7 +87,7 @@ locationSelect.addEventListener('change', (event) => {
             document.querySelector('#solarNoonTomorrow').innerHTML = data.results.solar_noon;
         })
         .catch(error => {
-            console.error('Error fetching data:', error);
+            document.querySelector('#errorMessage').innerHTML = error;
         });
 
     } else if (selectedLocation === 'houston') {
@@ -102,7 +102,7 @@ locationSelect.addEventListener('change', (event) => {
             document.querySelector('#solarNoonToday').innerHTML = data.results.solar_noon;
         })
         .catch(error => {
-            console.error('Error fetching data:', error);
+            document.querySelector('#errorMessage').innerHTML = error;
         });
         //Grabs data from the API for Houston tomorrow
         fetch("https://api.sunrisesunset.io/json?lat=29.749907&lng=-95.358421&date=tomorrow")
@@ -115,7 +115,7 @@ locationSelect.addEventListener('change', (event) => {
             document.querySelector('#solarNoonTomorrow').innerHTML = data.results.solar_noon;
         })
         .catch(error => {
-            console.error('Error fetching data:', error);
+            document.querySelector('#errorMessage').innerHTML = error;
         });
     } else if (selectedLocation === 'miami') {
         //Grabs data from the API for Miami today
@@ -129,7 +129,7 @@ locationSelect.addEventListener('change', (event) => {
             document.querySelector('#solarNoonToday').innerHTML = data.results.solar_noon;
         })
         .catch(error => {
-            console.error('Error fetching data:', error);
+            document.querySelector('#errorMessage').innerHTML = error;
         });
         //Grabs data from the API for Miami tomorrow
         fetch("https://api.sunrisesunset.io/json?lat=25.761681&lng=-80.191788&date=tomorrow")
@@ -142,7 +142,7 @@ locationSelect.addEventListener('change', (event) => {
             document.querySelector('#solarNoonTomorrow').innerHTML = data.results.solar_noon;
         })
         .catch(error => {
-            console.error('Error fetching data:', error);
+            document.querySelector('#errorMessage').innerHTML = error;
         });
     } else if (selectedLocation === 'seattle') {
         //Grabs data from the API for Seattle today
@@ -156,7 +156,7 @@ locationSelect.addEventListener('change', (event) => {
             document.querySelector('#solarNoonToday').innerHTML = data.results.solar_noon;
         })
         .catch(error => {
-            console.error('Error fetching data:', error);
+            document.querySelector('#errorMessage').innerHTML = error;
         });
         //Grabs data from the API for Seattle tomorrow
         fetch("https://api.sunrisesunset.io/json?lat=47.608013&lng=-122.335167&date=tomorrow")
@@ -169,7 +169,7 @@ locationSelect.addEventListener('change', (event) => {
             document.querySelector('#solarNoonTomorrow').innerHTML = data.results.solar_noon;
         })
         .catch(error => {
-            console.error('Error fetching data:', error);
+            document.querySelector('#errorMessage').innerHTML = error;
         });
 
     } else if (selectedLocation === 'denver') {
@@ -184,7 +184,7 @@ locationSelect.addEventListener('change', (event) => {
             document.querySelector('#solarNoonToday').innerHTML = data.results.solar_noon;
         })
         .catch(error => {
-            console.error('Error fetching data:', error);
+            document.querySelector('#errorMessage').innerHTML = error;
         });
         //Grabs data from the API for Denver tomorrow
         fetch("https://api.sunrisesunset.io/json?lat=39.742043&lng=-104.991531&date=tomorrow")
@@ -197,7 +197,7 @@ locationSelect.addEventListener('change', (event) => {
             document.querySelector('#solarNoonTomorrow').innerHTML = data.results.solar_noon;
         })
         .catch(error => {
-            console.error('Error fetching data:', error);
+            document.querySelector('#errorMessage').innerHTML = error;
         });
     } else if (selectedLocation === 'boston') {
         //Grabs data from the API for Boston today
@@ -211,7 +211,7 @@ locationSelect.addEventListener('change', (event) => {
             document.querySelector('#solarNoonToday').innerHTML = data.results.solar_noon;
         })
         .catch(error => {
-            console.error('Error fetching data:', error);
+            document.querySelector('#errorMessage').innerHTML = error;
         });
         //Grabs data from the API for Boston tomorrow
         fetch("https://api.sunrisesunset.io/json?lat=42.361145&lng=-71.057083&date=tomorrow")
@@ -224,7 +224,7 @@ locationSelect.addEventListener('change', (event) => {
             document.querySelector('#solarNoonTomorrow').innerHTML = data.results.solar_noon;
         })
         .catch(error => {
-            console.error('Error fetching data:', error);
+            document.querySelector('#errorMessage').innerHTML = error;
         });
 
     } else if (selectedLocation === 'sanfrancisco') {
@@ -239,7 +239,7 @@ locationSelect.addEventListener('change', (event) => {
             document.querySelector('#solarNoonToday').innerHTML = data.results.solar_noon;
         })
         .catch(error => {
-            console.error('Error fetching data:', error);
+            document.querySelector('#errorMessage').innerHTML = error;
         });
         //Grabs data from the API for San Francisco tomorrow
         fetch("https://api.sunrisesunset.io/json?lat=37.774929&lng=-122.419416&date=tomorrow")
@@ -252,7 +252,7 @@ locationSelect.addEventListener('change', (event) => {
             document.querySelector('#solarNoonTomorrow').innerHTML = data.results.solar_noon;
         })
         .catch(error => {
-            console.error('Error fetching data:', error);
+            document.querySelector('#errorMessage').innerHTML = error;
         });
         
     } else if (selectedLocation === 'atlanta') {
@@ -267,7 +267,7 @@ locationSelect.addEventListener('change', (event) => {
             document.querySelector('#solarNoonToday').innerHTML = data.results.solar_noon;
         })
         .catch(error => {
-            console.error('Error fetching data:', error);
+            document.querySelector('#errorMessage').innerHTML = error;
         });
         //Grabs data from the API for Atlanta tomorrow
         fetch("https://api.sunrisesunset.io/json?lat=33.7490&lng=-84.3880&date=tomorrow")
@@ -280,7 +280,7 @@ locationSelect.addEventListener('change', (event) => {
             document.querySelector('#solarNoonTomorrow').innerHTML = data.results.solar_noon;
         })
         .catch(error => {
-            console.error('Error fetching data:', error);
+            document.querySelector('#errorMessage').innerHTML = error;
         });
     } else {
         
