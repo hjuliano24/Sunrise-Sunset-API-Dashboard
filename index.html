@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sunset Sunrise Dashboard</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+NO:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+NO:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=wb_twilight" />
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="gradient">
     <header>
         <h1>Sunset Sunrise Dashboard</h1>
         <p>Track sunrise and sunset times for today and tomorrow</p>
@@ -34,14 +35,15 @@
                 <option value="atlanta">Atlanta</option>
             </select>
             <p id="errorMessage"></p>
-            <table>
-                <tr><th></th><th>Today</th><th>Tomorrow</th></tr>
-                <tr><td>Sunrise</td><td id="sunriseToday">--:--</td><td id="sunriseTomorrow">--:--</td></tr>
-                <tr><td>Sunset</td><td id="sunsetToday">--:--</td><td id="sunsetTomorrow">--:--</td></tr>
-                <tr><td>Dawn</td><td id="dawnToday">--:--</td><td id="dawnTomorrow">--:--</td></tr>
-                <tr><td>Dusk</td><td id="duskToday">--:--</td><td id="duskTomorrow">--:--</td></tr>
-                <tr><td>Solar Noon</td><td id="solarNoonToday">--:--</td><td id="solarNoonTomorrow">--:--</td></tr>
-            </table>
+            <div class="display">
+                <div></div>
+                <div>Today</div><div>Tomorrow</div>
+                <div><span class="material-symbols-outlined">wb_twilight</span><p>↑ Sunrise</p></div> <div><p id="sunriseToday">--:--</p></div> <div><p id="sunriseTomorrow">--:--</p></div>
+                <div><span class="material-symbols-outlined">wb_twilight</span><p>↓ Sunset</p></div> <div><p id="sunsetToday">--:--</p></div> <div><p id="sunsetTomorrow">--:--</p></div>
+                <div><p>Dawn</p></div> <div><p id="dawnToday">--:--</p></div> <div><p id="dawnTomorrow">--:--</p></div>
+                <div><p>Dusk</p></div> <div><p id="duskToday">--:--</p></div> <div><p id="duskTomorrow">--:--</p></div>
+                <div><p>Solar Noon</p></div> <div><p id="solarNoonToday">--:--</p></div> <div><p id="solarNoonTomorrow">--:--</p></div>
+            </div>
         </section>
     </main>
     <footer>
